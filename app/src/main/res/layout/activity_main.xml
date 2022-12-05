@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="417dp"
+        android:layout_height="58dp"
+        android:background="@drawable/heading"
+        android:text="@string/Enter"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <com.example.sudoku.sudokuBoard
+        android:id="@+id/sudokuBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        custom:boardColor="#000000"
+        custom:cellFillColor="#E0B0FF"
+        custom:cellHighlightColor="#E6E6FA"
+        custom:layout_constraintDimensionRatio="1:1"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintHorizontal_bias="0.0"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:letterColor="@color/black"
+        custom:letterColorSolve="#866fe3">
+
+
+    </com.example.sudoku.sudokuBoard>
+
+    <GridLayout
+        android:id="@+id/gridNumber"
+        android:layout_width="264dp"
+        android:layout_height="259dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintHorizontal_bias="0.496"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/sudokuBoard"
+        custom:layout_constraintVertical_bias="0.458"
+        tools:context=".GridXMLActivity">
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNOnePress"
+            android:text="@string/One"
+            android:padding="10dp"
+            android:textColor="@color/btn_color"
+            android:textSize="30sp"
+            android:background="@drawable/number_btn"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNTwoPress"
+            android:padding="10dp"
+            android:text="@string/Two"
+            android:textColor="@color/btn_color"
+            android:background="@drawable/number_btn"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNThreePress"
+            android:text="@string/Three"
+            android:padding="10dp"
+            android:textColor="@color/btn_color"
+            android:background="@drawable/number_btn"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNFourPress"
+            android:scaleType="fitCenter"
+            android:text="@string/Four"
+            android:padding="10dp"
+
+            android:textColor="@color/btn_color"
+            android:background="@drawable/number_btn"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNFivePress"
+            android:text="@string/Five"
+            android:padding="10dp"
+            android:textColor="@color/btn_color"
+            android:background="@drawable/number_btn"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNSixPress"
+            android:text="@string/Six"
+            android:padding="10dp"
+            android:textColor="@color/btn_color"
+            android:background="@drawable/number_btn"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNSevenPress"
+            android:text="@string/Seven"
+            android:textColor="@color/btn_color"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:background="@drawable/number_btn"/>
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNEightPress"
+            android:text="@string/Eight"
+            android:textColor="@color/btn_color"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:background="@drawable/number_btn"/>
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="BTNNinePress"
+            android:text="@string/Nine"
+            android:textColor="@color/btn_color"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:background="@drawable/number_btn"/>
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/solveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:width="150dp"
+        android:background="@drawable/solve_btn"
+        android:onClick="solve"
+        android:text="@string/solve"
+        android:textSize="20sp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="@+id/gridNumber" />
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
